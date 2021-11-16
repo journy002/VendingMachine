@@ -1,26 +1,4 @@
-let coffee = document.getElementById('coffee')
-let oksusu = document.getElementById('oksusu')
-let water = document.getElementById('water')
 
-let coin_1000 = document.getElementById('1000coin')
-let coin_500 = document.getElementById('500coin')
-let coin_100 = document.getElementById('100coin')
-let totalMoney = document.getElementById('total_money')
-
-let coin__1000 = 1000
-let coin__500 = 500
-let coin__100 = 100
-
-coffee.innerText = `커피(700원)`
-oksusu.innerText = `옥수수 수염차(1000)원`
-water.innerText = `물(500원)`
-
-coin_1000.innerText = `${coin__1000}원`
-coin_500.innerText = `${coin__500}원`
-coin_100.innerText = `${coin__100}원`
-
-let sum = 0
-total_money.innerHTML = `money : ${sum}`
 // function clickMoney(sum) {
 //     console.log('clickmoney', sum)
 //     if(sum >= 1000) {
@@ -102,12 +80,38 @@ total_money.innerHTML = `money : ${sum}`
 //     console.log(sum)
 // }
 
+
+let coffee = document.getElementById('coffee')
+let oksusu = document.getElementById('oksusu')
+let water = document.getElementById('water')
+
+let coin_1000 = document.getElementById('1000coin')
+let coin_500 = document.getElementById('500coin')
+let coin_100 = document.getElementById('100coin')
+let totalMoney = document.getElementById('total_money')
+
+let coin__1000 = 1000
+let coin__500 = 500
+let coin__100 = 100
+
+coffee.innerText = `커피(700원)`
+oksusu.innerText = `옥수수 수염차(1000)원`
+water.innerText = `물(500원)`
+
+coin_1000.innerText = `${coin__1000}원`
+coin_500.innerText = `${coin__500}원`
+coin_100.innerText = `${coin__100}원`
+
+let sum = 0
+total_money.innerHTML = `money : ${sum}`
+
+// 항상 객체를 잘 만들어 활용할 수 있도록 한다.
 const drinks = {
   coffee: 700,
   oksusu: 1000,
   water: 500,
 }
-
+// 반복되는 로직은 간결하게 만들 수 있게 생각하자
 function inputMoney(money) {
   sum += money
 
