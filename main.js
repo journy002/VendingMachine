@@ -80,10 +80,9 @@
 //     console.log(sum)
 // }
 
-
-let coffee = document.getElementById('coffee')
-let oksusu = document.getElementById('oksusu')
-let water = document.getElementById('water')
+// let coffee = document.getElementById('coffee')
+// let oksusu = document.getElementById('oksusu')
+// let water = document.getElementById('water')
 
 let coin_1000 = document.getElementById('1000coin')
 let coin_500 = document.getElementById('500coin')
@@ -120,14 +119,14 @@ function inputMoney(money) {
     // console.log(drinks[key]를 찍으면 drinks 키값의 value값을 가져오는걸 확인할 수 있다.)
     if (sum >= drinks[key]) {
       document.getElementById(key).style.color = 'green'
-      continue
+      continue // continue문을 만나면 해야할 명령문을 실행하지 않고 그 다음 명령문을 실행한다.
     }
     document.getElementById(key).style.color = 'black'
   }
 
   if (sum < 0) {
     total_money.innerHTML = `money : ${sum} 의 빚이 생겼어요!`
-    return
+    return // 위에 조건을 만족하면 해당 함수를 중단
   }
   total_money.innerHTML = `money : ${sum}`
 }
