@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+.container {
+    display: block;
+    width: 100%;
+}
+
+.container .menu_list,
+.container .insert_money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .inner .menu_btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+}
